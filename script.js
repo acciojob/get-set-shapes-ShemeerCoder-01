@@ -11,7 +11,7 @@ class Rectangle {
 		return this.height;
 	}
 	getArea(){
-		let sum = 2 * this.width * this.height;
+		let sum =  this.width * this.height;
 		return sum;
 	}
 }
@@ -23,7 +23,7 @@ class Square extends Rectangle {
 	}
 }
 
-let rectangle1 = new Rectangle(10,5);
+let rectangle1 = new Rectangle(5,5);
 rectangle1.getWidth;
 rectangle1.getHeight;
 rectangle1.getArea();
