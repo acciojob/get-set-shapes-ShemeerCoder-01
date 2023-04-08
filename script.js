@@ -11,24 +11,27 @@ class Rectangle {
 		return this.height;
 	}
 	getArea(){
-		let sum =  this.width * this.height;
-		return sum;
+		return  this.width * this.height;
+		
 	}
 }
 
 class Square extends Rectangle {
+	constructor(side){
+		super(side,side);
+	}
+	
 	getPerimeter(){
-		let peri  = 2 * (this.width + this.height);
-		return peri;
+		return 4 * this.getWidth;
 	}
 }
 
-let rectangle1 = new Rectangle(5,5);
+let rectangle1 = new Rectangle(5,10);
 rectangle1.getWidth;
 rectangle1.getHeight;
 rectangle1.getArea();
 
-let square1 = new Square(12,12);
+let square1 = new Square(7);
 square1.getWidth;
 square1.getHeight;
 square1.getPerimeter();
